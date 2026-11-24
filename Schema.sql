@@ -19,7 +19,7 @@ create table bills(
     phone varchar(15),
     payment_mode enum('cash','upi','card')not null,
     bill_date datetime default current_timestamp,
-    total_amount decimal(10,2) default 0
+    total_amount decimal(12,2) default 0
 );
 
 -- Detail table: one row per product on a bill (filled by the web page)
